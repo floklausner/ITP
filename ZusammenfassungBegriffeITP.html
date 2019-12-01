@@ -1,0 +1,526 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>ZusammenfassungBegriffeITP</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h4><a name="zusammenfassung-und-begriffe-itp" class="md-header-anchor"></a><span>Zusammenfassung und Begriffe ITP</span></h4><h6><a name="am-1-dezember-2019-florian-klausner" class="md-header-anchor"></a><span>am 1. Dezember 2019, Florian Klausner</span></h6><hr /><h4><a name="git" class="md-header-anchor"></a><span>GIT</span></h4><p><span>Git ist ein Versionsverwaltungssystem (Version Control System - VCS)</span></p><ol start='' ><li><p><span>Lokale Versionsverwaltung funktioniert mit der Versionskontrolle in einer Datenbank</span></p><p><img src="/Users/flo/Documents/SCHOOL/3AHITM/ITP-STUETZ/firstTest/no1.jpg" referrerpolicy="no-referrer"></p><ul><li><span>Die Lösung der Probleme bei richtiger Verwendung funktioniert mit </span><strong><span>einer guten Rückverfolgungsmöglichkeit (Was? Wann?)</span></strong><span> und </span><strong><span>Sauberen Strukturen</span></strong></li><li><span>Die Offenen Punkte dabei sind die </span><strong><span>Mehrbenutzerlösung für ein Team von Entwicklern fehlt</span></strong><span> und die </span><strong><span>sichere Redundanz zur Absicherung bei Datenverlusten ist schwierig (Back-Up-Strategie?)</span></strong></li></ul></li><li><p><span>Die Zentrale Versionsverwaltung am Server sieht wie folgt aus</span></p><p><img src="/Users/flo/Documents/SCHOOL/3AHITM/ITP-STUETZ/firstTest/no2.jpg" referrerpolicy="no-referrer"></p><ul><li><span>Die Lösung der Probleme bei richtiger Verwendung funktioniert mit </span><strong><span>Guter Rückverfolgungsmöglichkeit (Was? Wann?)</span></strong><span> einer </span><strong><span>Sauberen Struktur</span></strong><span> und </span><strong><span>Mehbenutzerlösung für ein Team von Entwicklern</span></strong><span> </span></li><li><span>Die Offenen Punkte dabei sind das es </span><strong><span>keine Erreichbarkeit des Repos bei Server-Ausfall</span></strong><span> gibt und das die </span><strong><span>sichere Redundanz zur Absicherung bei Datenverlust nur über eine Back-Up-Strategie funktioniert</span></strong><span> </span></li></ul></li><li><p><span>Die Verteilte Versionsverwaltug </span></p><p><img src="/Users/flo/Documents/SCHOOL/3AHITM/ITP-STUETZ/firstTest/no3.jpg" referrerpolicy="no-referrer"></p><ul><li><span>Die Lösung der Probleme bei richtiger Verwendung funktioniert mit </span><strong><span>Guter Rückverfolgungsmöglichkeit (Was? Wann?)</span></strong><span> einer </span><strong><span>Sauberen Struktur</span></strong><span> und </span><strong><span>Mehbenutzerlösung für ein Team von Entwicklern</span></strong><span> der </span><strong><span>Erreichbarkeit des Repos bei Server-Ausfall</span></strong><span> und einer </span><strong><span>sicheren Redundanz zu absicherung bei Datenverlusten durch Kopien (Back-Up-Strategie muss trotzdem vorhanden sein)</span></strong></li><li><span>Die Offenen Punkte dabei sind das es einen </span><strong><span>eventuellen kleinen Nachteil gibt da insgesamt mehr Speicher benutzt wird</span></strong></li></ul></li></ol><p>&nbsp;</p><p><span>Weitere Besonderheiten von Git sind:</span></p><ul><li><p><strong><span>Datenverwaltung:</span></strong><span> Herkömmliche Versionsverwaltungen speichern Änderungen oft über Beta-Daten (nur Unterschiede werden gespeichert)</span>
+<span>Git erstellt Schnappschüsse</span>
+<span>Das ist ein zentraler Unterschied zwischen Git und vielen anderen VCS. In Git wurden viele Aspekte der Versionsverwaltung neu überdacht, die in anderen Systemen mehr oder weniger von ihrer jeweiligen Vorgängergeneration übernommen worden waren. Git arbeitet im Großen und Ganzen vergleichbar mit einem Mini-Dateisystem, statt nur als Versionsverwaltungssystem. (Siehe “.git” Ordner eines Git-versionierten Projektes.)</span></p></li><li><p><strong><span>Git stellt Integrität sicher:</span></strong><span> Von allen zu speichernden Daten berechnet Git Prüfsummen (engl. checksum) und speichert diese als Referenz zusammen mit den Daten ab. Das macht es unmöglich, dass sich Inhalte von Dateien oder Verzeichnissen ändern, ohne dass Git das mitbekommt. (SHA-1 Hash)</span></p></li><li><p><strong><span>Git fügt im Regelfall nur Daten hinzu:</span></strong><span> Rückverfolgung wird in der Datenverwaltung gewährleistet </span></p></li><li><p><strong><span>Die drei Zustände:</span></strong><span> Git definiert drei Hauptzustände, in denen sich eine Datei befinden kann: committet (engl. committed), geändert (engl. modified) und für Commit vorgemerkt (engl. Staged).</span></p><ul><li><strong><span>Modified</span></strong><span> bedeutet, dass eine Datei geändert, aber noch nicht in die lokale Datenbank eingecheckt wurde.</span></li><li><strong><span>Staged</span></strong><span> bedeutet, dass eine geänderte Datei in ihrem gegenwärtigen Zustand für den nächsten Commit vorgemerkt ist.</span></li><li><strong><span>Committed</span></strong><span> bedeutet, dass die Daten sicher in der lokalen Datenbank gespeichert sind. </span></li></ul></li></ul><p>&nbsp;</p><p><span>Der Verzeichnisbaum (Working Directory) ist ein einzelner Abschnitt einer Version des Projekts. (Muss nicht der letzte Stand sein!) Die Staging-Area ist in der Regel eine (mehrere) Datei(en), die sich in Ihrem Git-Verzeichnis befindet und Informationen darüber speichert, was in Ihren nächsten Commit einfließen soll. Der technische Name im GitSprachgebrauch ist „Index“, aber der Ausdruck „Staging Area“ funktioniert genauso gut. Im Git-Verzeichnis (.git) werden die Metadaten und die Objektdatenbank für Ihr Projekt gespeichert. Das ist der wichtigste Teil von Git, dieser Teil wird kopiert, wenn man ein Repository von einem anderen Rechner klont.</span></p><p>&nbsp;</p><p><strong><span>Der grundlegende Git-Arbeitsablauf</span></strong></p><p><span>Nachdem ein Git-Projekt neu erstellt oder geklont wurde und eine Version (oft letzt gültige) im Verzeichnisbaum liegt: </span></p><ol start='' ><li><p><span>Sie ändern Dateien in Ihrem Verzeichnisbaum. </span></p></li><li><p><span>Sie stellen selektiv Änderungen bereit, die Sie bei Ihrem nächsten Commit berücksichtigen möchten, wodurch nur diese Änderungen in den Staging-Bereich aufgenommen werden. </span></p></li><li><p><span>Sie führen einen Commit aus, der die Dateien so übernimmt, wie sie sich in der Staging-Area befinden und diesen Snapshot dauerhaft in Ihrem Git-Verzeichnis speichert. </span></p><ul><li><span>Wenn sich eine bestimmte Version einer Datei im Git-Verzeichnis befindet, wird sie als committed betrachtet.</span></li><li><span>Wenn sie geändert und in die Staging-Area hinzugefügt wurde, gilt sie als für den Commit vorgemerkt (engl. Staged). </span></li><li><span>Und wenn sie geändert, aber noch nicht zur Staging-Area hinzugefügt wurde, gilt sie als geändert (engl. modified).</span></li></ul></li></ol><p>&nbsp;</p><p>&nbsp;</p><hr /><p>&nbsp;</p><h4><a name="buchseiten" class="md-header-anchor"></a><span>Buchseiten</span></h4><h5><a name="ugründe-für-projekteu" class="md-header-anchor"></a><u><span>Gründe für Projekte</span></u></h5><p><span>Mit dem Begriff &quot;Projekt&quot; wird eine dynamische und unbürpkratische Beältigung von Aufgaben assoziiert. In der häufigeren Durhcfühtung von Projekten spiegeln sich die geändertet Anforderungen in Betrieben und Organisationnen während er letzten Jahre wieder</span></p><ul><li><span>Die Häufigkeit </span><strong><span>&quot;individueller&quot; Problemlösungen</span></strong><span> nimmt zu, standardisierbare Produktionsprozesse oder Tätigkeiten (Microsoft Word) werden maschinell und/oder durch Informationstechnologien weitgehend automatisiert.</span></li><li><span>Die zu lösenen </span><strong><span>Aufgaben werden komplexer</span></strong><span> und können oft nur bereichsübergreifend bewältigt werden (mehrere Bereiche zusammengefasst)</span></li><li><strong><span>Betriebliche Innovationen</span></strong><span> können in herkömmlicher Linienorganisation nur schwer bewältigt werden</span></li><li><span>Projekte heben sich von der Alltagsroutine ab - im richtigen Maße eingesetzt wirken sie </span><strong><span>motivierend</span></strong><span>, da sie dem individuellerem Selbstebewusstsein heutiger Arbeitnehmer besser entsprechen</span></li><li><span>Im Zuge der globalisierung arbeiten verteilte Teams an gemeinsamen Aufgaben</span></li></ul><p>&nbsp;</p><p><span>Die Durchführung von Projekten kann Innovationen in folgenden Bereichen unterstützen:</span></p><ul><li><strong><span>Technik:</span></strong><span> durch Entwicklung von Produkten und Verfahren, durch Forschung, Realisierung von Anlagen und (Bau-)Objekten</span></li><li><strong><span>Markt:</span></strong><span> durch neue Marketingkonzepte, Erschließung neuer Märkte und Vertriebswege</span></li><li><strong><span>Organisation:</span></strong><span> durch Entwicklung und einführung von Informationssystemen, innerbetriebliche Reorganisation</span></li></ul><p>&nbsp;</p><h5><a name="uprojektmerkmaleu" class="md-header-anchor"></a><u><span>Projektmerkmale</span></u></h5><p><span>Bei jedem Projekt besteht ein höheres Risiko als bei Routinefällen</span></p><p><strong><span>Inhaltliche Zielsetzung: </span></strong><span> Projekte beginnen in einem definierten Ausgangszusatnd und haben die Erreichung eines bestimmten, vor Projektbeginn definierten Ziels zum Inhalt. Mit der Erreichung des Projektziels ist der Projektzweck erfüllt und das Projekt beendet</span></p><p><strong><span>Zeitliche Zielsetzung: </span></strong><span> Eine Projektaufgabe ist keine Daueraufgabe, sondern sie ist zeitlich befristet. Anfangs- und Endzeitpunkt des Vorhabens sind geplant oder werden vorgegeben</span></p><p><strong><span>Innovativer Charakter (Neuartigkeit): </span></strong><span> Projekte sind neuartige und einmalige Vorhaben. Ihre Neuartigkeit ergibt sich daraus, dass nicht oder nur teilweise auf vorhandenes Know-How oder bestehende Erfahrung zurückgegriffen werden kann. Neuartigkeit ist auch gegeben, wenn spezielle Rahmenbedingungen eine routinemäßige Abwicklung einer Aufgabe nicht möglich machen (z.B. spezielle Vertragsbedinungen, geänderte Infrastruktur, politische, kulturelle oder gesellschaftliche Gegebenheiten)</span></p><p><strong><span>Ressourcenknappheit: </span></strong><span> Projekte erfordern personelle, finanzielle, materielle und andere Mittel. Die zur urchführung des Vorhabens verfügbaren Mittel sind begrenzt; Kosten und Budget sind im Voraus geplant uns festgelegt.</span></p><p><strong><span>Komplexität: </span></strong><span> Das Merkmal Kompläxität kennzeichnet die Anzahl und Verschiedenartigkeit der einzelnen Teilaufgaben eines Projekts sowie deren gegenseitige Verflechtung und Abhängigkeit. Die Komplexität eines Projekts wächst weiters mit der Anzahl der daran beteiligten Personen bzw. unterschiedlichen Personengruppen</span></p><p><strong><span>Risiko: </span></strong><span> Projekte zeichnen sich aufgrund ihrer Neuartigkeit und Kompläxität durch eine höhere Wahrscheinlichkeit des Scheiterns aus als Routineaufgaben. Das Risiko beschreibt dabei die Wahrscheinlichkeit, mit welcher bestimmte Rahmenbedingungen und Ziele nicht erfüllt werden können sowie die sich daraus ergebenden Auswikrungen</span>
+<u><span>technisches Realisierungsrisiko, Zeitrisiko, Aufwandsrisiko, Zielsetzungsrisiko, Verwertbarkeitsrisiko</span></u></p><p><strong><span>Umfang: </span></strong><span> Der Projektumfang beschreibt ein Projekt in mehreren Dimensionen:</span></p><ul><li><span>Anzahl der im Rahmen des Projekts durchzuführenden Einzelaufgaben</span></li><li><span>Anzahl der am Projekt beteiligten Personen oder Stellen </span></li><li><span>Umfang (Mengeninheiten) der festgelegten Leistung</span></li><li><span>Einzusetzende Mittel (geldmittel, betriebliche Ressourcen)</span></li></ul><p><strong><span>Kontinuität des Projekts: </span></strong><span> Dieses Kriterium definiert, ob die Projektmitarbeiter kontinuierlich oder nur zeitweise für das Projekt tätig sind</span></p><p>&nbsp;</p><h5><a name="uprojektablauf---projektphasenu" class="md-header-anchor"></a><u><span>Projektablauf - Projektphasen</span></u></h5><p><span>Es gibt 4 Projektphasen: Projektinitierung, Projektplanung, Projektdurchführung und Proejtfortschritt</span>
+<span>Eine Projektphase bildet eine Einheit welche logisch und sachlich gegenüber anderen Abschnitten abgegrenzt ist. Den Abschluss einer Projektphase bildet ein sogenannter Meilenstein. </span>
+<span>Ein </span><strong><span>Meilenstein</span></strong><span> ist ein überprüfbares Zwischenergebnis, das inhaltlich und terminlich genau beschrieben ist.</span></p><p>&nbsp;</p><h5><a name="uprojektartenu" class="md-header-anchor"></a><u><span>Projektarten</span></u></h5><p><span>Projektarten könne entweder nach dem Auftraggeber (intern, extern) sein, nach den Zielen (sachzielorientiert, prozessorientiert) oder nach der Häufigkeit (repetitiv, nicht repetitiv)</span>
+<strong><span>Intern: </span></strong><span> Auftraggeber ist die Unternehmensleistung, verbesserung der Leistungsfähigkeit</span>
+<strong><span>Extern: </span></strong><span> für einen Kunden durchgeführt, Kunde gibt Ziele vor</span>
+<strong><span>Sachzielorientiert: </span></strong><span> Ertsllung/Veränderung/Verbesserung von Produkten eines unternehmens </span>
+<strong><span>Prozessorientiert: </span></strong><span> Schaffung, Gestltung oder Koordination von Prozessen (Produktionsablauf -&gt; Zeit sparen/Durchlaufzeiten verringern)</span>
+<strong><span>Respetitiv:</span></strong><span> Vorhaben, die mit veränderten Aufgabenstellungen aber ähnlicher Grundstruktur öfter vorkommen</span>
+<strong><span>Nicht Respetitiv:</span></strong><span> einmalige Vorhaben </span></p><p>&nbsp;</p><p>&nbsp;</p><h5><a name="uzertifizierung-im-projektmanagementu" class="md-header-anchor"></a><u><span>Zertifizierung im Projektmanagement</span></u></h5><p><span>Darunter vertseht man die Überprüfung und Bestätigung durch eine unabhängige und anerkannte Institution, dass die zertifizierte Person nachweislich über bestimmte erforderliche, im orhinein definierte Kompetenzen und Fähigkeiten verfügt</span></p><p><span>Die zwei wichtigsten in österreich vertetenen Institutionen für die Entwicklung, Verarbeitung und Zertifizierung für Projektmanagement sind: </span></p><p><span>das </span><strong><span>PMI:</span></strong><span> Project Managment Institute </span>
+<span>die </span><strong><span>IPMA: </span></strong><span> International Project Management Association</span></p><p>&nbsp;</p><h5><a name="umorphologischer-kastenu" class="md-header-anchor"></a><u><span>Morphologischer Kasten</span></u></h5><p><span>Der Morphologische Kasten hilft dabei, verschieden Aspekte oder Merkmale einer (Projekt-)Lösung systematisch anzuordnen. Er trägt dazu bei, die ideale Kombination aus einer Fülle von Merkmalen zu finden.</span></p><p><span>Schritte davon: </span></p><ul><li><span>Definieren der Aufgabenstellung </span></li><li><span>Festlegen der Teilbereiche</span></li><li><span>Festlegen der Ausprägung zu jedem Teilbereich</span></li><li><span>Definieren der verschiedenen Lösungsvarianten</span></li><li><span>Analyse und Auswahl derLösung(en)</span></li></ul><p>&nbsp;</p><h5><a name="ubioniku" class="md-header-anchor"></a><u><span>Bionik</span></u></h5><p><span>Das Kunstwort Bionik setzt sich aus den Wörtern Biologie und Technik Zusammen. DIese vor allem im Technologiebereich sehr beliebt Methode nimmt Anleihen inder Natur.</span>
+<span>Die Bionik geht davon aus, dass sie evolutionäre Entwicklung im Laufe von Millionen von Jahren meist optimale Lösungen hervorgebracht hat. </span></p><p>&nbsp;</p><h5><a name="udelphi-methodeu" class="md-header-anchor"></a><u><span>Delphi-Methode</span></u></h5><p><span>Die Delphi-Methode bündelt und verdichtet das Know-how unabhängiger Expertinnen und Experten zu einem vorgegebenen (Zukunfts-)Thema</span></p><p>&nbsp;</p><h5><a name="uprojektidee---projektantragu" class="md-header-anchor"></a><u><span>Projektidee - Projektantrag</span></u></h5><p><span>Jedes Projekt beginnt mit einer Projektidee, d.h. dem Wunsch, Bestehndes zu ändern und Neues zu schaffen. Gründe für die Entstehung einer Projektidee können sein: </span></p><ul><li><span>technische Innovation (Smartphones) </span></li><li><span>gesellschaftspolitische Gründe</span></li><li><span>Sicherung der Wettbewerbsfähigkeit (billiger/besser produzieren)</span></li><li><span>betriebliche Umorganisation Produktionsablauf ändern (Hierarchie)</span></li><li><span>Schwachstellen im bisherigen Verfahren</span></li></ul><p><span>Ein Projektantrag ist dann ein Projektantrag wenn die Projektidee schriftlich festgehalten wird</span>
+<span>Ein Projektantrg enthält unter anderem: </span></p><ul><li><span>eine überblicksmäßige Aufgabenbeschreibung </span></li><li><span>den Nutzen, der durch das Projekt erwartet ist</span></li><li><span>die Konsequenzen bei Nichtdurchführung des Projekts</span></li><li><span>personelle und finanzielle Rahmenbedingungen</span></li></ul><p><span>Eine Machbarkeitsstudie untersucht ob ein vorgeschlagenes Projekt realisiert werden kann.</span></p><p>&nbsp;</p><h5><a name="uprojektzieleu" class="md-header-anchor"></a><u><span>Projektziele</span></u></h5><p><span>...können in 3 Kategorien aufgeteilt werden</span></p><ol start='' ><li><p><span>der Leistung</span></p></li><li><p><span>den Terminen</span></p></li><li><p><span>den Kosten</span></p><p><span>Zu den drei Bereichen sagt man auch &quot;Magisches Dreieck des Projekmanagments&quot;</span>
+<span>Eine gute Zielsetung zeichnet sich für zwei Merkamle aus</span></p><ul><li><span>Die Ziele müssen erreichbar sein</span></li><li><span>Die Ziele müssen quantifizierbar sein, d.h. ihre Erreichung muss messbar sein</span></li></ul></li></ol><p>&nbsp;</p><h5><a name="ubedeutung-des-projektauftragsu" class="md-header-anchor"></a><u><span>Bedeutung des Projektauftrags</span></u></h5><p><span>Der Projektauftrag bringt die Projektidee in eine konkrete, auf eine Umsetzung hin gerichtete Struktur.</span></p><ul><li><span>Zielformulierung</span></li><li><span>Qualitätskriterien</span></li><li><span>finanzieller Rahmen</span></li><li><span>Termine</span></li><li><span>Organisation und Personen</span></li></ul><p><span>Der genehmigte Projektauftrag bildet den formalen Projektbeginn</span></p><h5><a name="uteile-des-projektauftragsu" class="md-header-anchor"></a><u><span>Teile des Projektauftrags</span></u></h5><p><span>Der Projektauftrag enthält alle vertaglich zu erbringenden Leistungen, Fristen, Kosten sowie Randbedingungen der Leistungserbringungen</span></p><p><strong><span>Projektbezeichnung: </span></strong><span> Name des Projekts - üblicherweise ein einprägsames und gut auszusprechendes Akronym, welches durch die Langbezeichnung sowie ein Projektlogo ergänzt werden kann</span>
+<strong><span>Projektauftraggeber: </span></strong><span> Bezeichnung des Auftraggebers (Firma, Oganisation, etc. ), der verantwortlichen Person(en) beim Auftraggeber (Ansprechpartner) sowie Kontaktangaben (Adresse, Telefon-/Faxnummer, E-Mail Adresse)</span>
+<strong><span>Projekthintergrund: </span></strong><span> Was hat zu diesem Projekt geführt? Welche Mängel oder Probleme sollen durch das Projekt beseitigt werden oder welche Chancen können durch das Projekt genutzt werden?</span></p><p>&nbsp;</p><p>&nbsp;</p><h5><a name="" class="md-header-anchor"></a></h5><h5><a name="utreffen-einer-zielvereinbarungu" class="md-header-anchor"></a><u><span>Treffen einer Zielvereinbarung</span></u></h5><p><span>Frage nach dem &quot;WOZU&quot;? - Sinn und Zweck des Projekts</span></p><p><span>Frage nach dem &quot;FÜR WEN&quot;? - Wer ist Kunde oder Auftraggeber</span></p><p><span>Frage nach dem &quot;ENDERGEBNIS&quot;? - Was soll am Projektende als Ergebnis vorliegen</span></p><p><span>Frag nach dem &quot;ERFOLGKRITERIEN&quot;? - Welche messbaren Eigenschaften hat das Endergebnis, damit von einem Projekterfolg gesprochen werden kann</span></p><p>&nbsp;</p><hr /><h4><a name="häufig-gestellte-begriffe" class="md-header-anchor"></a><span>Häufig gestellte Begriffe</span></h4><ul><li><p><span>Was untersucht eine Feasabillity Study? Welche Aspekte werden dabei betrachtet?</span></p><ul><li><p><span>Eine Machbarkeitsstudie untersucht ob ein vorgeschlagenes Projekt realisiert werden kann bzw. Soll. Dazu werden verschiedene Aspekte der angestrepten Lösungen sowie des dazu notwendigen Projekts betrachtet: </span></p><ul><li><span>Wirtschaftlichkeit des Projekts bzw. der angestrepten neuen Lösung</span></li><li><span>Beitrag des Projekts zur Unternehmensstrategie</span></li><li><span>(Technische) Umsetzbarkeit des Projekts</span></li><li><span>Verfügbarkeit der erforderlichen Ressourcen</span></li><li><span>sonstige Einflüsse wie z.B. Stakeholder</span></li></ul></li></ul></li><li><p><span>Was ist ein Stakeholder?</span></p><ul><li><span>Als Stakeholder oder Anspruchsberechtigter wird eine Person oder Gruppe bezeichnet, die ein berechtigtes Interesse am Verlauf oder Ergebnis eines Prozesses oder Projektes hat. In der Betriebswirtschaftslehre wird Stakeholder als Anspruchsgruppe übersetzt.</span></li></ul></li></ul><p>&nbsp;</p><hr /><h4><a name="was-ist-uml" class="md-header-anchor"></a><span>Was ist UML?</span></h4><p><span>Die </span><strong><span>Unified Modeling Language</span></strong><span> </span><em><span>(vereinheitlichte Modellierungssprache)</span></em><span>, kurz </span><strong><span>UML</span></strong><span>, ist eine grafische Modellierungssprache zur Spezifikation, Konstruktion und Dokumentation von Software-Teilen und anderen Systemen.Sie wird von der Object Management Group (OMG) entwickelt und ist sowohl von ihr als auch von der ISO (ISO/IEC 19505 für Version 2.4.1) genormt. Im Sinne einer Sprache definiert UML dabei Bezeichner für die meisten bei einer Modellierung wichtigen Begriffe und legt mögliche Beziehungen zwischen diesen Begriffen fest. UML definiert weiter grafische Notationen für diese Begriffe und für Modelle statischer Strukturen und dynamischer Abläufe, die man mit diesen Begriffen formulieren kann.</span></p><p><span>UML ist heute die dominierende Sprache für die Softwaresystem-Modellierung. Der erste Kontakt zu UML besteht häufig darin, dass Diagramme in UML im Rahmen von Softwareprojekten zu erstellen, zu verstehen oder zu beurteilen sind:</span></p><ul><li><span>Projektauftraggeber und Fachvertreter prüfen und bestätigen zum Beispiel Anforderungen an ein System, die Wirtschaftsanalytiker bzw. Business Analysten in Anwendungsfalldiagrammen in UML festgehalten haben;</span></li><li><span>Softwareentwickler realisieren Arbeitsabläufe, die Wirtschaftsanalytiker bzw. Business Analysten in Zusammenarbeit mit Fachvertretern in Aktivitätsdiagrammen beschrieben haben;</span></li><li><span>Systemingenieure implementieren, installieren und betreiben Softwaresysteme basierend auf einem Implementationsplan, der als Verteilungsdiagramm vorliegt.</span></li></ul><p><span>Die grafische Notation ist jedoch nur ein Aspekt, der durch UML geregelt wird. UML legt in erster Linie fest, mit welchen Begriffen und welchen Beziehungen zwischen diesen Begriffen sogenannte </span><em><span>Modelle</span></em><span> spezifiziert werden – Diagramme in UML zeigen nur eine graphische Sicht auf Ausschnitte dieser Modelle. UML schlägt weiter ein Format vor, in dem Modelle und Diagramme zwischen Werkzeugen ausgetauscht werden können.</span></p></div>
+</body>
+</html>
